@@ -34,11 +34,18 @@ body {
     border: #000000 2px solid;
 }
 
-.reminder-textarea {
+.reminder-list-container {
     border: #000000 2px solid;
-    font-size: 15pt;
-    width: 100%;
-    text-align: center;
+    padding: 10px;
+}
+
+.reminder-list {
+    text-align: left;
+}
+
+.reminder-list-button {
+    float: right;
+    background-color: red;
 }
 
 .reminder-footer {
