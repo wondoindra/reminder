@@ -7,34 +7,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Reminder</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
-    <header>
-        <h1>
+    <div class="container">
+        <div class="header-title">
             <span>Reminder</span>
-        </h1>
-    </header>
-    <div>
-        <h2>
-            <p>What do you want to be reminded today?</p>
-        </h2>
+        </div>
+        <div class="reminder-content">
+            <p class=" header-description ">What do you want to be reminded today?</p>
+            <form class="input-form" action="">
+                <input class="input-reminder-text" type="text" placeholder="Write something here">
+                <br>
+                <button class="remind-button">Remind me!</button>
+                <br>
+                <textarea class="reminder-textarea" name="" id=" " cols="30 " rows="10 ">
+                    Flight at 12:00 PM Red Carpet at 20:00 PM
+                </textarea>
+            </form>
+        </div>
+        <footer class="reminder-footer">
+            <small>Reminder Corporation 2018</small>
+        </footer>
     </div>
-    <div>
-        <form action="">
-            <input type="text" placeholder="Write something here">
-            <br>
-            <button>Remind me!</button>
-            <br>
-            <textarea name="" id="" cols="30" rows="10">
-                Flight at 12:00 PM Red Carpet at 20:00 PM
-            </textarea>
-        </form>
-    </div>
-    <footer>
-        <small>Reminder Corporation 2018</small>
-    </footer>
 </body>
 
 </html>

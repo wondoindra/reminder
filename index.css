@@ -1,0 +1,47 @@
+body {
+    width: 30%;
+    margin: 0px auto;
+    text-align: right;
+    border: 2px solid #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-title {
+    background-color: #59FBF1;
+    padding: 20px;
+    font-size: 36pt;
+    text-align: right;
+}
+
+.reminder-content {
+    font-size: 18pt;
+    padding: 20px;
+}
+
+.input-reminder-text {
+    width: 50%;
+    height: 30px;
+    text-align: right;
+    font-size: 15pt;
+    border: #000000 2px solid;
+}
+
+.remind-button {
+    background-color: #59FBF1;
+    font-size: 15pt;
+    border-radius: 10%;
+    margin: 20px 0;
+    border: #000000 2px solid;
+}
+
+.reminder-textarea {
+    border: #000000 2px solid;
+    font-size: 15pt;
+    width: 100%;
+    text-align: center;
+}
+
+.reminder-footer {
+    text-align: center;
+    font-size: 15pt;
+}
