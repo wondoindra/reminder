@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Reminder</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
@@ -18,28 +20,18 @@
         </div>
         <div class="reminder-content">
             <p class=" header-description ">What do you want to be reminded today?</p>
-            <form class="input-form" action="">
-                <input class="input-reminder-text" type="text" placeholder="Write something here">
-                <br>
-                <button class="remind-button">Remind me!</button>
-                <br>
-                <div class="reminder-list-container">
-                    <div class="reminder-list">
-                        <button class="reminder-list-button">X</button>
-                        <p>Flight at 12:00 PM</p>
-
-                    </div>
-                    <div class="reminder-list">
-                        <button class="reminder-list-button">X</button>
-                        <p>Red Carpet at 20:00 PM</p>
-                    </div>
-                </div>
-            </form>
+            <input id="input-text" class="input-reminder-text" type="text" placeholder="Write something here">
+            <br>
+            <button id="input-button" class="remind-button">Remind me!</button>
+            <br>
+            <div class="reminder-list-container">
+            </div>
         </div>
         <footer class="reminder-footer">
             <small>Reminder Corporation 2018</small>
         </footer>
     </div>
+
 </body>
 
 </html>

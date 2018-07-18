@@ -41,6 +41,7 @@ body {
 
 .reminder-list {
     text-align: left;
+    padding: 10px 0;
 }
 
 .reminder-list-button {
@@ -51,4 +52,8 @@ body {
 .reminder-footer {
     text-align: center;
     font-size: 15pt;
+}
+
+li {
+    list-style-type: none;
 }
