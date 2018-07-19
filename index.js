@@ -4,14 +4,14 @@ $(document).ready(function () {
             alert("Write something ");
         } else {
             var text = $("#input-text").val();
-            $(".reminder-list-container").append("<div class='reminder-list'>" +
-                "<button id='reminder-delete' class='reminder-list-button'>X</button> " +
-                "<li>" + text + "</li>" + "</div>");
+            $(".reminder-list-container").append("<div class='card m-3'>" +
+                "<div class='card-header'>" + "</div>" + "<div class='card-body'>" +
+                "<p class='card-text'>" + text + "</p>" + "<button id='reminder-delete' class='btn btn-danger float-right'>Completed</button>" + "</div>" + "</div>");
             $("#input-text").val('');
         }
     });
 });
 
 $(document).on("click", "#reminder-delete", function () {
-    $(this).parent().fadeOut(400);
+    $(".card").fadeOut(400);
 })

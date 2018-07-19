@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Reminder</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
     <script src="./index.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -15,23 +17,35 @@
 
 <body>
     <div class="container">
-        <div class="header-title">
-            <span>Reminder</span>
+        <div class="jumbotron">
+            <h1 class="display-4">Reminder</h1>
+            <p>Never forget your important task again</p>
+            <p id="datetime" class="text-right"></p>
         </div>
-        <div class="reminder-content">
-            <p class=" header-description ">What do you want to be reminded today?</p>
-            <input id="input-text" class="input-reminder-text" type="text" placeholder="Write something here">
-            <br>
-            <button id="input-button" class="remind-button">Remind me!</button>
-            <br>
-            <div class="reminder-list-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <input type="text" id="input-text" class="form-control" placeholder="Write something here">
+                </div>
+                <div class="col-sm">
+                    <input type="text" id="datepicker" class="form-control" placeholder="Date & Time">
+                </div>
             </div>
+            <button id="input-button" class="btn btn-color-custom mt-3">Remind me!</button>
         </div>
-        <footer class="reminder-footer">
-            <small>Reminder Corporation 2018</small>
-        </footer>
+        <div class="reminder-list-container">
+        </div>
     </div>
-
 </body>
+<script>
+    var d = new Date();
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
+        "November", "December"
+    ];
+    document.getElementById("datetime").innerHTML = days[d.getDay()] + ", " + d.getDate() + " " + months[d.getMonth()] +
+        " " +
+        d.getFullYear();
+</script>
 
 </html>
