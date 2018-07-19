@@ -1,7 +1,11 @@
-.jumbotron {
-    background-color: #59FBF1;
+.container-body {
+    background-color: #f2fcff;
 }
 
 .btn-color-custom {
     background-color: #59FBF1;
+}
+
+.reminder-list-container {
+    min-height: 300px;
 }
